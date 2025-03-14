@@ -1,3 +1,14 @@
 .sidebar {
-  background-color: red;
+  background-color: var(--color-primary);
+  width: 220px;
+  flex-shrink: 0;
+  position: sticky;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (max-width: 920px) {
+  .sidebar {
+    width: 40px;
+  }
 }

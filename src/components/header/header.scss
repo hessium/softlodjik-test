@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 24px;
+  gap: 16px;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .header {
+    &__row {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 680px) {
+  .header {
+
+    & .button {
+      &:nth-child(3) {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
