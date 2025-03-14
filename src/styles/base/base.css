@@ -1,0 +1,29 @@
+html,
+body, #root {
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100dvh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html:has(body.no-scroll) {
+    overflow-y: hidden;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px 0;
+}
